@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/source_piece_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.16" />
+
+    <TextView
+        android:id="@+id/source_piece_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.16"
+        android:gravity="right"
+        android:textSize="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="33dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/source_piece_column"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.16"
+        android:gravity="left"
+        android:textSize="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="->"
+        android:textSize="33dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/destiny_piece_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.16"
+        android:gravity="right"
+        android:textSize="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="33dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/destiny_piece_column"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.16"
+        android:gravity="left"
+        android:textSize="33dp" />
+
+    <ImageView
+        android:id="@+id/destiny_piece_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16" />
+
+</LinearLayout>

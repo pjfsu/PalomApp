@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/custom_search_player_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Player 1"
+            android:text=""
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/custom_search_player_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Player 2"
+            android:text=""
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/custom_search_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/custom_search_player_1_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player 1 (All)"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/custom_search_player_1_wins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player 1 (Wins)"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/custom_search_player_1_in_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player 1 (In progress)"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/custom_search_player_1_draws"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player 1 (Draws)"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/custom_search_players_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player 1 vs Player 2 (All)"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/custom_search_players_wins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player 1 vs Player 2 (Player 1 wins)"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/custom_search_players_in_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player 1 vs Player 2 (In progress)"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/custom_search_players_draws"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player 1 vs Player 2 (Draws)"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

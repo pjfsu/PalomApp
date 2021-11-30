@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/undo_game_option"
+        android:title="UNDO" />
+    <item
+        android:id="@+id/history_game_option"
+        android:title="HISTORY" />
+    <item
+        android:id="@+id/resume_game_option"
+        android:title="RESUME" />
+    <item
+        android:id="@+id/finish_game_option"
+        android:title="FINISH" />
+    <item
+        android:id="@+id/delete_game_option"
+        android:title="DELETE" />
+</menu>

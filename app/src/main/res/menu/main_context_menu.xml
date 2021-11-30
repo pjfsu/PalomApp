@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/load_main_context"
+        android:title="LOAD" />
+    <item
+        android:id="@+id/history_main_context"
+        android:title="HISTORY" />
+    <item
+        android:id="@+id/resume_main_context"
+        android:title="RESUME" />
+
+</menu>

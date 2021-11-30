@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/purple_500"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/white_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textSize="23dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_white_pawn" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_black_pawn" />
+
+        <TextView
+            android:id="@+id/black_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textSize="23dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/white_games"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text="GAMES"
+            android:textSize="33dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/black_games"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textSize="33dp"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/white_wins"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text=" WINS"
+            android:textStyle="bold"
+            android:textSize="33dp"/>
+
+        <TextView
+            android:id="@+id/black_wins"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0" android:textSize="33dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/taken_black_pawns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_black_pawn" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_white_pawn" />
+
+        <TextView
+            android:id="@+id/taken_white_pawns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/taken_black_rooks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_black_rook" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_white_rook" />
+
+        <TextView
+            android:id="@+id/taken_white_rooks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/taken_black_bishops"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_black_bishop" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_white_bishop" />
+
+        <TextView
+            android:id="@+id/taken_white_bishops"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/taken_black_knights"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_black_knight" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_white_knight" />
+
+        <TextView
+            android:id="@+id/taken_white_knights"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/taken_black_queens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_black_queen" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_white_queen" />
+
+        <TextView
+            android:id="@+id/taken_white_queens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/taken_black_kings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_black_king" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:src="@drawable/ic_white_king" />
+
+        <TextView
+            android:id="@+id/taken_white_kings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="33dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

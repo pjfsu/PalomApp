@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/player_1_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="PLAYER"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/player_1_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/player_1_whites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:drawableRight="@drawable/ic_white_pawn"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/player_1_blacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:drawableRight="@drawable/ic_black_pawn"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/player_2_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="PLAYER"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/player_2_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/player_2_whites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:drawableRight="@drawable/ic_white_pawn"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/player_2_blacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:drawableRight="@drawable/ic_black_pawn"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="BOARD COLOR "
+        android:textSize="23dp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/board_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/board_color_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@color/gray"
+            android:checked="false"
+            android:textColor="@color/gray" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@color/red"
+            android:checked="false"
+            android:textColor="@color/red" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@color/green"
+            android:checked="false"
+            android:textColor="@color/green" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@color/blue"
+            android:checked="false"
+            android:textColor="@color/blue" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@color/yellow"
+            android:checked="false"
+            android:textColor="@color/yellow" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@color/cyan"
+            android:checked="false"
+            android:textColor="@color/cyan" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@color/magenta"
+            android:checked="false"
+            android:textColor="@color/magenta" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:text="OK"
+        android:textSize="33dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
